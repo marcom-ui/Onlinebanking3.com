@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of America | Online Banking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://about.bankofamerica.com/assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Top Navigation -->
+    <div class="top-nav">
+        <div class="container">
+            <div class="top-nav-left">
+                <span><i class="fas fa-globe"></i> Español</span>
+                <span><i class="fas fa-headset"></i> 1.800.432.1000</span>
+            </div>
+            <div class="top-nav-right">
+                <span>Enroll</span>
+                <span>Help</span>
+                <span>Security</span>
+                <span>Locations</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://www.bankofamerica.com/content/images/ContextualSiteGraphics/Logos/en_US/boa_logo_82x30_rebrand.png" alt="Bank of America">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-user"></i> <span id="user-name">Peter Cowley</span></a></li>
+                    <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sign Out</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Banner -->
+    <div class="welcome-banner">
+        <div class="container">
+            <div class="welcome-text">
+                <h1><span id="greeting">Good Evening</span>, Peter Cowley</h1>
+                <p>Last login: Today at 6:45 PM | Account #: ************4382</p>
+            </div>
+            <div class="alerts">
+                <span class="alert-badge"><i class="fas fa-bell"></i> 2 Alerts</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <div class="account-summary">
+                <h3><i class="fas fa-university"></i> ACCOUNTS</h3>
+                <ul class="account-list">
+                    <li class="active"><i class="fas fa-credit-card"></i> Checking</li>
+                    <li><i class="fas fa-piggy-bank"></i> Savings</li>
+                    <li><i class="fas fa-credit-card"></i> Credit Cards</li>
+                    <li><i class="fas fa-chart-line"></i> Investments</li>
+                    <li><i class="fas fa-home"></i> Mortgage</li>
+                </ul>
+            </div>
+            
+            <div class="quick-links">
+                <h3><i class="fas fa-bolt"></i> QUICK ACTIONS</h3>
+                <button class="btn-quick"><i class="fas fa-exchange-alt"></i> Transfer</button>
+                <button class="btn-quick"><i class="fas fa-file-invoice-dollar"></i> Pay Bills</button>
+                <button class="btn-quick"><i class="fas fa-mobile-alt"></i> Mobile Deposit</button>
+                <button class="btn-quick"><i class="fas fa-history"></i> View Statements</button>
+            </div>
+        </aside>
+
+        <!-- Main Dashboard -->
+        <section class="dashboard">
+            <!-- Account Balance Card -->
+            <div class="balance-card">
+                <div class="balance-header">
+                    <h2><i class="fas fa-wallet"></i> Advantage Banking</h2>
+                    <span class="account-number">...4382</span>
+                </div>
+                <div class="balance-amount">
+                    <p class="balance-label">Available Balance</p>
+                    <h1 class="balance" id="current-balance">$10,875,875.98</h1>
+                    <p class="balance-sub">USD</p>
+                </div>
+                <div class="balance-actions">
+                    <button class="btn-primary"><i class="fas fa-arrow-up"></i> Send Money</button>
+                    <button class="btn-primary"><i class="fas fa-arrow-down"></i> Request Money</button>
+                    <button class="btn-secondary"><i class="fas fa-plus"></i> Add Money</button>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="transactions">
+                <h3><i class="fas fa-history"></i> RECENT TRANSACTIONS</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Today</td>
+                            <td>Transfer to Savings</td>
+                            <td><span class="type-transfer">Transfer</span></td>
+                            <td class="amount-negative">-$5,000.00</td>
+                            <td><span class="status-completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Oct 15</td>
+                            <td>Direct Deposit - Salary</td>
+                            <td><span class="type-deposit">Deposit</span></td>
+                            <td class="amount-positive">+$12,500.00</td>
+                            <td><span class="status-completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Oct 12</td>
+                            <td>Amazon.com Purchase</td>
+                            <td><span class="type-purchase">Purchase</span></td>
+                            <td class="amount-negative">-$249.99</td>
+                            <td><span class="status-completed">Completed</span></td>
+                        </tr>
+                        <tr>
+                            <td>Oct 10</td>
+                            <td>Apple Store</td>
+                            <td><span class="type-purchase">Purchase</span></td>
+                            <td class="amount-negative">-$1,299.00</td>
+                            <td><span class="status-completed">Completed</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Account Details -->
+            <div class="account-details">
+                <div class="detail-card">
+                    <h4><i class="fas fa-info-circle"></i> ACCOUNT DETAILS</h4>
+                    <div class="detail-row">
+                        <span>Account Holder:</span>
+                        <strong>Peter Cowley</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Account Type:</span>
+                        <strong>Advantage Banking</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Routing Number:</span>
+                        <strong>021000322</strong>
+                    </div>
+                    <div class="detail-row">
+                        <span>Member Since:</span>
+                        <strong>March 2015</strong>
+                    </div>
+                </div>
+                
+                <div class="detail-card">
+                    <h4><i class="fas fa-shield-alt"></i> SECURITY STATUS</h4>
+                    <div class="security-status">
+                        <div class="security-item">
+                            <i class="fas fa-check-circle security-good"></i>
+                            <span>2FA Enabled</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-check-circle security-good"></i>
+                            <span>Biometric Login</span>
+                        </div>
+                        <div class="security-item">
+                            <i class="fas fa-exclamation-triangle security-warning"></i>
+                            <span>Last Security Review: 30 days ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy & Security</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Site Map</a>
+                <a href="#">Careers</a>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Bank of America Corporation. All rights reserved.</p>
+                <p class="disclaimer">This is a student project for educational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
